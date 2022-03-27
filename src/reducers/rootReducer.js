@@ -1,4 +1,3 @@
-
 const initState = {
   posts: [
     {id: '1', title: "Khale Adventures chapter 1", body: "Khalesh meet her worst enemy ever, the baset hound neighbor"},
@@ -7,9 +6,20 @@ const initState = {
   ]
 }
 
-//dispatcher action function to return the state only receives state as initial state setted here only and the action to restructure it 
+
+
 const rootReducer = (state = initState, action) => {
+  console.log(action)
+  if(action.type === 'DELETE_POST') {
+    let newPosts = state.posts.filter(post => {
+      return action.id !== post.id 
+    });
+    return {
+      ...state,
+      posts: newPosts
+    }
+  }
   return state;
 }
 
-export {rootReducer}
+export default rootReducer
