@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/react-poke-app/static/css/main.7779d361.css",
-    "main.js": "/react-poke-app/static/js/main.2bb8f6a0.js",
-    "static/js/787.d3befce1.chunk.js": "/react-poke-app/static/js/787.d3befce1.chunk.js",
-    "static/media/pikachu-confused.png": "/react-poke-app/static/media/pikachu-confused.d64462c5c883c6efcf47.png",
+    "main.css": "/react-poke-app/static/css/main.725b065c.css",
+    "main.js": "/react-poke-app/static/js/main.71dfc4af.js",
     "static/media/pokeball.png": "/react-poke-app/static/media/pokeball.05e5662d79b3c6b0a2a7.png",
     "index.html": "/react-poke-app/index.html",
-    "main.7779d361.css.map": "/react-poke-app/static/css/main.7779d361.css.map",
-    "main.2bb8f6a0.js.map": "/react-poke-app/static/js/main.2bb8f6a0.js.map",
-    "787.d3befce1.chunk.js.map": "/react-poke-app/static/js/787.d3befce1.chunk.js.map"
+    "main.725b065c.css.map": "/react-poke-app/static/css/main.725b065c.css.map",
+    "main.71dfc4af.js.map": "/react-poke-app/static/js/main.71dfc4af.js.map"
   },
   "entrypoints": [
-    "static/css/main.7779d361.css",
-    "static/js/main.2bb8f6a0.js"
+    "static/css/main.725b065c.css",
+    "static/js/main.71dfc4af.js"
   ]
 }
