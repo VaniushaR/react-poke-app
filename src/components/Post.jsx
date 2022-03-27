@@ -21,13 +21,6 @@ const Post = () => {
 
      }, []) 
 
-    
-     
-   
-
-   
-   
-   
     return(
       <div className="container"> 
 

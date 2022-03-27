@@ -7,7 +7,7 @@ const NavBar = (props) => {
       <div className="container">
       <a  href="/" className="brand-logo left">Poke Times</a>
       <ul className="right">
-        <li><Link to="/react-poke-app">Home</Link></li>
+        <li><Link to="react-poke-app/">Home</Link></li>
         <li><Link to="react-poke-app/about"> About </Link></li>
         <li><Link to="react-poke-app/contact">Contact</Link></li>
       </ul>

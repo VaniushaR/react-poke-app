@@ -15,11 +15,11 @@ class App extends Component {
       <div className="App">
         <NavBar/>
         <Routes>
-        <Route path="/react-poke-app" element={<Home/>}/>
+        <Route exact path="react-poke-app/" element={<Home/>}/>
         <Route path="react-poke-app/about" element={<About/>}/>
         <Route path="react-poke-app/contact" element={<Contact/>}/>
-        <Route path="react-poke-app/:post_id" element={<Post/>}/>
-        <Route path="*" element={
+        <Route path="/:post_id" element={<Post/>}/>
+        <Route path="react-poke-app/*" element={
         <main style={{ padding: "1rem" }}>
           <p>There's nothing here!</p>
           <img class="responsive-img" src={PikachuConfused} alt="Pikachu confused wondering where you want to go now..."/>
