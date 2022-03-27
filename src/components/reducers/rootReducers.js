@@ -7,6 +7,7 @@ const initState = {
   ]
 }
 
+//dispatcher action function to return the state only receives state as initial state setted here only and the action to restructure it 
 const rootReducer = (state = initState, action) => {
   return state;
 }

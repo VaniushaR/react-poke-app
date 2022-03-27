@@ -2,25 +2,13 @@ import {Component} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import pokeball from '../assets/pokeball.png'
-
+import {connect} from 'react-redux'
 class Home extends Component {
-  
-  state = {
-    posts: []
-  }
-
-  componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/posts")
-    .then(res => {
-      console.log(res)
-      this.setState({
-        posts: res.data.slice(0,11)
-      })
-    })
-  }
-  
+  //changing the axios request here to get the data from the initial store state
   render() {
-    const {posts} = this.state
+    //now instead having a state from component we have a this.props of this component filled with the store initial state since wrapped this component on the reucer function, Root
+    console.log(this.props)
+    const {posts} = this.props
     const postList = posts.length ? (
       posts.map((post)=> {
         return(
@@ -51,4 +39,12 @@ class Home extends Component {
     
   )
 }}
-export default Home
+//this function is the 1st paramete rof connect() redux method to named by convention as mapStateToProps, this functions are expected to return an object. This object, normally referred to as stateProps, will be merged as props to the connected component. If you define mergeProps, it will be supplied as the first parameter to mergeProps, in this case i'm not defining the second parameter.
+
+const mapStateToProps = (state) => {
+  return {
+    posts: state.posts
+  }
+}
+//wrapped as High Order Component the connect redux method
+export default connect(mapStateToProps)(Home)

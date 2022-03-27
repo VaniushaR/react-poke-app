@@ -7,7 +7,7 @@ import {createStore} from 'redux'
 import { Provider } from 'react-redux';
 import { rootReducer } from './components/reducers/rootReducers';
 
-
+//wrapping the App component fully with the react-redux provider and passing the reducer rootReducer as parameter to create the store, so the const store contains the store setted on rootReducer.
 const store = createStore(rootReducer)
 
 ReactDOM.render(
